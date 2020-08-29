@@ -1,0 +1,5 @@
+1.3
+
+update 8/23/2020
+--Smart resolver
+
