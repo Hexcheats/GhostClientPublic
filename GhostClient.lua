@@ -167,12 +167,12 @@ local open = gui.Keybox(menubox, "Menu.Key","Menu Key", 45)
 local credit = gui.Text(info, "Ghost Client Is a client Coded By FGLX and dodo we try and improve aimware and help u guys enjoy your time with aimware and we have to give a big thanks to Hamgod,Setway,Sc0pe,xeefii these people are who help make this happen and everyones support at Ghost Discord")
 
 --Update
-local CURRENTVERSION = "2.0"
-local LATESTVERSION = http.Get("https://raw.githubusercontent.com/Hexcheats/GhostClientBeta/master/Version.txt")
+local CURRENTVERSION = "1.0"
+local LATESTVERSION = http.Get("https://raw.githubusercontent.com/Hexcheats/GhostClientPublic/master/version.txt")
 local function Update() 
     if CURRENTVERSION ~= LATESTVERSION then
         currentScript = file.Open(GetScriptName(), "w")
-        currentScript:Write(http.Get("https://raw.githubusercontent.com/Hexcheats/GhostClientBeta/master/GhostClientBeta.lua"))
+        currentScript:Write(http.Get("https://raw.githubusercontent.com/Hexcheats/GhostClientPublic/master/GhostClient.lua"))
         currentScript:Close()
         LoadScript(GetScriptName())
     end
@@ -216,7 +216,7 @@ local Updatebox = gui.Groupbox(ghost, "Update", 170, 5, 410, 1000)
 local CURRENTVERSION = gui.Text(Updatebox, "Current version: v" .. CURRENTVERSION)
 local LATESTVERSION = gui.Text(Updatebox, "Latest version: v" .. LATESTVERSION)
 local UPDATE = gui.Button(Updatebox, "Update", Update)
-local CHANGELOG_TEXT = gui.Text(Updatebox, http.Get("https://raw.githubusercontent.com/Hexcheats/GhostClientBeta/master/Changelog.txt"))
+local CHANGELOG_TEXT = gui.Text(Updatebox, http.Get("https://raw.githubusercontent.com/Hexcheats/GhostClientPublic/master/changelog.txt"))
 
 
 
@@ -429,6 +429,106 @@ local SpeedS = gui.Slider(SlowWalk, "Delays", "Delay", 1, 1, 40);
 
 
 
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--
+--local animationStep = 255 / animation_speed_value * globals.FrameTime()
+--if ktime + 0.1 > globals.RealTime() then
+--    animationAlpha = - 80
+--else
+--    animationAlpha = animationAlpha - animationStep
+--end
+--        if (alpha > 0) then
+--        if(kills == 1) then
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--
+--local animationStep = 255 / animation_speed_value * globals.FrameTime()
+--if ktime + 0.1 > globals.RealTime() then
+--    animationAlpha = - 80
+--else
+--    animationAlpha = animationAlpha - animationStep
+--end
+--        if (alpha > 0) then
+--        if(kills == 1) then
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--
+--local animationStep = 255 / animation_speed_value * globals.FrameTime()
+--if ktime + 0.1 > globals.RealTime() then
+--    animationAlpha = - 80
+--else
+--    animationAlpha = animationAlpha - animationStep
+--end
+--        if (alpha > 0) then
+--        if(kills == 1) then
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--
+--local animationStep = 255 / animation_speed_value * globals.FrameTime()
+--if ktime + 0.1 > globals.RealTime() then
+--    animationAlpha = - 80
+--else
+--    animationAlpha = animationAlpha - animationStep
+--end
+--        if (alpha > 0) then
+--        if(kills == 1) then
 
 
 
