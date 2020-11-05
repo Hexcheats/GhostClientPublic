@@ -1,1 +1,7 @@
-Ghost client Public
+11/5/20
+Update
+--Fixed anti-aim to latest update
+--Removed FD Fake lag indicators
+--Fixed slow walk and LBY indicators
+--Fast DT fixed to latest update
+--Added Leg animation fuck up
