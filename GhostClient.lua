@@ -166,8 +166,327 @@ local open = gui.Keybox(menubox, "Menu.Key","Menu Key", 45)
 --Credits
 local credit = gui.Text(info, "Ghost Client Is a client Coded By FGLX and dodo we try and improve aimware and help u guys enjoy your time with aimware and we have to give a big thanks to Hamgod,Setway,Sc0pe,xeefii these people are who help make this happen and everyones support at Ghost Discord")
 
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+
 --Update
-local CURRENTVERSION = "1.0"
+local CURRENTVERSION = "1.1"
 local LATESTVERSION = http.Get("https://raw.githubusercontent.com/Hexcheats/GhostClientPublic/master/version.txt")
 local function Update() 
     if CURRENTVERSION ~= LATESTVERSION then
@@ -202,6 +521,219 @@ local yawtype = gui.Combobox(aaYaw,"comboyaw", "Yaw Customization", "Off" , "Sta
 local lefttype = gui.Combobox(aaLeft,"comboleft", "Left Desync Customization", "Off" , "Static","Switch")
 local righttype = gui.Combobox(aaRight,"comboright", "right Desync Customization", "Off" , "Static","Switch")
 --Visuals
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+
 local Visualsbox = gui.Groupbox(ghost, "Visuals", 170, 5, 650, 1000)
 local VisualsIndicator = gui.Groupbox(Visualsbox, "Indicators", 0, 0, 200, 500)
 local Indicators = gui.Combobox(VisualsIndicator,"comboindicators", "Indicators", "Off" , "SlowWalk","FakeDuck","FakeLag");
@@ -278,6 +810,218 @@ local buildertab = gui.Button(tabback, "Builder", function()
     Updatebox:SetInvisible(true);
 
 
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
+--local function KillEvent(Event)
+--   if (Event:GetName() == 'player_death') then
+--       local lp = client.GetLocalPlayerIndex()
+--       local uid = Event:GetInt('userid')
+--       local attacker = Event:GetInt('attacker')
+--       local vicname = client.GetPlayerNameByUserID(uid)
+--       local vicindex = client.GetPlayerIndexByUserID(uid)
+--       local attname = client.GetPlayerNameByUserID(attacker)
+--       local attindex = client.GetPlayerIndexByUserID(attacker)
+--       ktime = globals.RealTime()
+--      kills = kills + 1
+--       end
+--   end
+--end
+--
+--local function RoundStart(Event)
+---if (Event:GetName() == 'round_start') then
+--kills = 0
+--end
+--end
+--
+--local VerdanaCustom = draw.CreateFont("Verdana", 35, 700)
+--
+---function Textx(x, y, text, r, g, b, a)
+--draw.SetFont(VerdanaCustom)
+--draw.Color(r, g, b, a)
+--draw.Text(x, y, text)
+--end
+--
+--local animationAlpha = 0
+--
+--local function KillDraw()
+--
+--local screen_sizex, screen_sizey = draw.GetScreenSize()
+--local animation_speed_value = 0.6
+--local step = 255 / 0.6 * globals.FrameTime()
+--
+--if ktime + 0.4 > globals.RealTime() then
+--    alpha = 255
+--else
+--    alpha = alpha - step
+--end
 
 
 
