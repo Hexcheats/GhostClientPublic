@@ -1,7 +1,9 @@
-11/5/20
+11/14/2020
 Update
---Fixed anti-aim to latest update
---Removed FD Fake lag indicators
---Fixed slow walk and LBY indicators
---Fast DT fixed to latest update
---Added Leg animation fuck up
+Update logs:
+-- Fixed LBY static
+--  Changed switch to 4 ticks
+-- Added 2 more features to Extra tab in base yaw
+>Model animation fucker
+>AntiAlign LBY fucker 
+-- Error in onshot customizer, please ignore
