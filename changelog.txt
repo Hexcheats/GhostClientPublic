@@ -1,9 +1,8 @@
-11/14/2020
-Update
+11.25.2020
 Update logs:
--- Fixed LBY static
---  Changed switch to 4 ticks
--- Added 2 more features to Extra tab in base yaw
->Model animation fucker
->AntiAlign LBY fucker 
--- Error in onshot customizer, please ignore
+-- Fixed At Edges Still working
+-- Added Jitter To Yaw
+-- Added Jitter To LBY
+-- Added Jitter To Rotation
+-- Added Descriptions on some features 
+-- Error in onshot customizer Please still ignore
